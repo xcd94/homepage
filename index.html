@@ -1,16 +1,21 @@
 <html>
-	<!meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable=no"/>
 <head>
 	<meta charset="UTF-8">
     <title>主页</title>
 </head>
 <style>
+		html,body{
+			overflow: hidden;
+			height: 100%;
+		}
         .div1{
 			    text-align: center; /*让div内部文字居中*/
 				border-radius: 20px;
-				width: 50%;
-				height: 50%;
-				padding: 20%;
+				width: 300px;
+				height: 350px;
+				/*height: auto;*/
+				/*padding-top: 20%;*/
 				margin: auto;
 				position: absolute;
 				top: 0;
@@ -22,7 +27,7 @@
 		.img1{
             /*width: 150px;*/
             /*height: 170px;*/
-            width: 10px;
+            width: 100%;
         }
         .box1{
             /*width: 150px;*/
@@ -33,25 +38,29 @@
             /*width: 150px;*/
             /*height: 170px;*/
             width: 5%;
+			/*font-size: 50vw;*/
         }
     </style>
 <body>
 <form id="bdfm" target="_blank" name="bdfm" method="get" action="http://www.baidu.com/s">
 	<center>
 		<div class="div1">
+		<div>
 			<img class="img1" " align="absmiddle" src="logo.jpg" alt="logo" width=100% ></img>
-
-			<table>
+        </div>
+		<div>
+			<table >
 				<tr>
 					<!td >
 						<!a href="http://www.baidu.com">
                          <img！ src="img/baidu.jpg"/>
 						<!/a>
 					<!/td>
-					<td ><br/><input class="box1" type="text" id="search1" name="word"/></td>
+					<td ><br/><input class="box1" type="text" id="search1" name="word"  /></td>
 					<td class="box2"><br/><input type="submit" value="搜索" /></td>
 				</tr>
 			</table>
+		</div>
 		</div>
 		
 		<!div class="div2">
